@@ -1,0 +1,33 @@
+Look at the console
+
+<h1>JSON Response</h1>
+
+<li *ngFor="let user of userArray">
+  {{user | json}}
+</li>
+
+<h1>Tabular Response</h1>
+<div><button id="btn">Click for JSON Response</button></div>
+<div>
+<div>
+  <h4>Output:</h4>
+</div>
+<table border=1 cellspacing="0">
+  <thead>
+    <tr><td *ngFor="let row of row_0; let i = index">{{row_0[i]}}</td>
+    </tr>
+  </thead>
+  <tbody>
+      <tr><td *ngFor="let row of row_1; let i = index">{{row_1[i]}}</td></tr>
+      <tr><td *ngFor="let row of row_2; let i = index">{{row_2[i]}}</td></tr>
+      <tr><td *ngFor="let row of row_3; let i = index">{{row_3[i]}}</td></tr>
+      <tr><td *ngFor="let row of row_4; let i = index">{{row_4[i]}}</td></tr>
+      <tr><td *ngFor="let row of row_5; let i = index">{{row_5[i]}}</td></tr>
+      <tr><td *ngFor="let row of row_6; let i = index">{{row_6[i]}}</td></tr>
+      <tr><td *ngFor="let row of row_7; let i = index">{{row_7[i]}}</td></tr>
+    </tbody>
+  </table>
+</div>
+
+
+
